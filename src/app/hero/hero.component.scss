@@ -1,0 +1,99 @@
+.hero-image {
+  background-image: url("https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24rem;
+  background-attachment: scroll, fixed;
+  animation: mymove .5s normal;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: end;
+}
+code {
+  margin: 4px;
+}
+.hero-title {
+  font-size: 3rem;
+  color: white;
+  padding-right: 6rem;
+  animation: typing 0.3s steps(20, end), blink-caret .5s step-end 8, stopBlink 3s step-end ;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero-paragrafo {
+  font-size: 1.5rem;
+  color: white;
+  width: 26rem;
+  display: flex;
+  position: relative;
+  padding-right: 3rem;
+  animation: slidy 5s infinite;
+
+}
+
+.hero-chave {
+  margin-right: 10rem;
+  animation: mymove 1.5s infinite normal;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 36%;
+  }
+}
+
+@keyframes stopBlink {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes slidy {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: -50%;
+  }
+  15% {
+    left: 0;
+  }
+}
+
+@keyframes mymove {
+  50%{
+    opacity: 0;
+  }
+  10% {
+    opacity: 10%;
+  }
+  80% {
+    opacity: 00%;
+  }
+
+}

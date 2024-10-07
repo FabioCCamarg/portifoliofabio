@@ -1,0 +1,84 @@
+nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: .9rem;
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ece8e8;
+  font-size: 1.2em;
+  padding: 4px 8px;
+  animation: slidy 2s normal;
+}
+
+nav ul li a:hover {
+  font-size: 1.2rem;
+  color: white; /* cor do LinkedIn */
+  background-color: #0073b1;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px black;
+
+}
+
+nav ul li a i {
+  margin-right: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Espaço entre os ícones */
+}
+
+.social-icons .icon {
+  text-decoration: none;
+  color: #333; /* Cor padrão dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  transition: color 0.3s; /* Transição suave na cor ao passar o mouse */
+}
+
+.social-icons .icon:hover {
+  color: #0073b1; /* Cor ao passar o mouse sobre o ícone (pode ajustar para o LinkedIn) */
+}
+
+.social-icons .icon:first-of-type:hover {
+  color: #333; /* Cor ao passar o mouse sobre o ícone do GitHub */
+}
+
+@keyframes slidy {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: -50%;
+  }
+  15% {
+    left: 0;
+  }
+}
+
+.container  {
+  font-size: 1.2rem;
+  color:white;
+  background-color: #272c33;
+  font-family:monospace;
+  box-shadow: 2px 2px 4px rgba(252, 252, 252, 0.527);
+  padding: 2rem;
+  margin-bottom: 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+
